@@ -1,0 +1,336 @@
+/* Ajustes de responsividade  */
+
+@media screen and (min-width: 992px){
+    .grid-banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }   
+
+    .text-banner{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .grid-projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 0.8rem;
+        padding: 0rem 1.8rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 993px){
+
+    .text-banner{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        /* margin-left: -155px; */
+    }
+
+   .grid-projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 0.5rem;
+        padding: 0rem 1.8rem;
+    }
+
+  
+}
+
+/* Responsivo para tablet notebook e desktop */
+@media screen and (min-width: 769px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-two {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-item {
+        list-style: none;
+    }
+
+    .link-menu-desktop {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Poppins-Medium;
+        color: var(--cor-menu-header);
+        position: relative;
+        transition: color 0.5s ease;
+    }
+
+    .link-menu-desktop::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: #ff3700;
+        transition: width 0.3s ease;
+    }
+
+    .link-menu-desktop:hover::after {
+        width: 100%;
+    }
+
+    .link-menu-desktop:hover {
+        color: var(--cor-texto-3);
+    }
+
+    .img-banner{
+        width: 100%;
+        max-width: 360px;
+        border-radius: 50%;
+        margin: 2.4re 0rem;
+        transition: .2s;
+    }
+
+    .img-banner:hover{
+        transform: scale(1.1);
+    }
+
+     .btn-portifolio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 21px;
+        gap: 3px;
+    }
+    
+    .title-banner{
+        padding: 0rem 3rem 0rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: default;
+    }
+
+    .box-contact{
+        padding: 0rem 1rem 3rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info-copy{
+        font-family: var(--font-copy);
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+    }
+
+    .rs-icon{
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        margin-bottom: 5px;
+    }
+    
+
+}
+
+/* Responsivo para celulares e tablets */
+@media screen and (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .img-logotipo {
+        max-width: 115px;
+        max-height: 115px;
+    }
+
+    .menu-one{
+        width: 100%;
+        text-align: center;
+        left: -140%;
+        top: -18px;
+        padding: 1rem 0rem;
+        position: absolute;
+        background-color: var(--cor-bg-menu-mobile);
+        transition: 0.7s ease-in-out;
+    }
+
+    .menu-one.active{
+        left: 0px;
+    }
+
+    .nav-item{
+        margin: 6.8px 0px;
+        list-style: none;
+    }
+
+    .link-menu-mobile{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Poppins-Medium;
+        color: var(--cor-texto-menu-mobile);
+    }
+
+    .bar{
+        display: block;
+        width: 28px;
+        height: 3px;
+        border-radius: 2px;
+        margin: 5px auto;
+        background-color: var(--cor-barra-menu-mobile);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-hamb{
+        cursor: pointer;
+        display: block;
+    }
+
+    .btn-hamb.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .btn-hamb.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .btn-hamb.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .title-banner{
+        padding: 0rem 3rem 0rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: default;
+    }
+
+    .text-banner{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .img-banner{
+        width: 50%;
+        border-radius: 50%;
+        margin: 2.4rem 0rem;
+        transition: .2s;
+    }
+
+    .img-banner:hover{
+        transform: scale(1.1);
+    }
+
+    .btn-portifolio{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 10px;
+    }
+
+    .card-projects{
+        width: 310px;
+        padding-bottom: 3px;
+    }
+
+    .grid-projects{
+        display: grid;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .contact {
+        padding: 1.6rem;
+    }
+
+    .rs-icon{
+        border-bottom: 1px solid white;
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+    }
+
+    .img-icon{
+        width: 100%;
+        max-width: 40px;
+        object-fit: cover;
+    }
+
+    .info-copy{
+        font-family: var(--font-copy);
+        font-size: 0.7rem;
+        padding: 6px 0px;       
+        text-align: center;        
+    }
+
+           
+}
+
+/* Responsividade para o Quem sou ficar certo */
+@media screen and (max-width: 790px){
+    .menu-two {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 430px) {
+    
+    .img-banner{
+        /* ajuste de width feito */
+        width: 62%;
+        max-width: 360px;
+        object-fit: contain;
+    }
+
+    /* Ajuste feito fora de aula */
+    .btn-nav-topo{
+        margin-left: -170px;
+    }
+
+    .btn-portifolio{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-top: 10px;
+        /* Ajuste feito fora de aula */
+        max-width: 300px;
+    }
+
+    /* Ajuste feito fora de aula */
+    .img-logotipo {
+        max-width: 95px;
+        max-height: 95px;
+    }
+    /* Ajuste feito fora de aula */
+    .box-habil{
+        max-width: 372px;
+    }
+    /* Ajuste feito fora de aula */
+    .rs-icon{
+        gap: 0.9rem;
+    }
+    /* Ajuste feito fora de aula */
+    .menu-one{
+        top: -35px;
+    }
+    
+    /* Ajuste feito fora de aula */
+    .menu-web{
+        margin-right: -110px;
+    }
+
+
+}

@@ -1,0 +1,442 @@
+/* Importação de camadas CSS */
+@import url(./fonts.css);
+@import url(./mediaQuery.css);
+@import url(./variables.css);
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.wrap{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+}
+
+.btn-inicio{
+    margin: 0rem 0.8rem 0.8rem 0rem;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.btn-nav-topo{
+    width: 60px;
+    transition: .4s;
+    opacity: 50%;
+}
+
+.btn-nav-topo:hover{
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+/* Header */
+.img-logotipo{
+    height: var(--pixel-logo-quad);
+    width: var(--pixel-logo-quad);
+    transition: .4s;
+    cursor: default;
+}
+
+.img-logotipo:hover, .logotipo-copy:hover{
+    transform: scale(1.08);
+}
+
+.img-logotipo{
+    padding: 1.2rem;
+}
+.topo-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.web{
+    display: flex;
+    justify-content: end;
+    padding: 1.2rem;
+}
+
+
+
+/* Main Page */
+
+/* Resentando as margins e paddins da pagina*/
+#home{
+    padding: var(--zeropx-home);
+    margin: var(--zeropx-home);
+    border: var(--zeropx-home);
+}
+
+.banner-page{
+    background-color: var(--cor-bg-banner);
+    color: var(--cor-texto-banner);
+}
+
+.btn-portifolio{
+    background-color: var(--cor-bg-2);
+}
+
+.nome{
+    font-size: 4rem;
+    font-family: Montserrat-SemiBold;
+}
+
+.funcao{
+    font-size: 1.8rem;
+    font-family: Montserrat-Regular;
+}
+
+.descricao{
+    font-size: 1.1rem;
+    font-family: Poppins-Light;
+}
+
+.icone-jp{
+    color: var(--cor-icone-nome);
+    transition: 0.3s;
+    font-family: Poppins-Medium;
+}
+
+.icone-jp:hover{
+    color: var(--cor-icone-nome-hover);
+}
+
+.link-github, .link-linkedin{
+    height: 60px;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: Poppins-SemiBold;
+    color: black;
+    padding: 1.6rem 2rem;
+    margin: 0.2rem;
+    border: 3.8px #ff6347 solid;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;  
+}
+
+.link-github:hover, .link-linkedin:hover{
+    border: 5px #ff3700 solid;
+    transform: scale(1.02);
+}
+
+.github, .linkedin{
+    width: 65px;
+}
+
+.box-img-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .img-banner{
+    width: 100%;
+    max-width: 360px;
+    border-radius: 50%;
+    margin: 2.4rem;
+    transition: .2s;
+}
+
+.img-banner:hover{
+    transform: scale(1.1);
+} */
+
+.about{
+    background-color: var(--cor-bg-about);
+    color: var(--cor-texto-about);
+    font-family: var(--font-texto);
+    text-align: center;
+    padding: 3rem 0rem;
+}
+
+.title-about{
+    font-size: var( --font-size-title);
+    font-family: var(--font-titulo-principal);
+    margin: 0px;
+}
+
+.sub-title-about{
+    font-family: var(--font-sub-titulo);
+    font-size: var(--font-size-sub-title);
+}
+
+.text-about{
+    font-family: var(--font-texto);
+    font-size: var(--font-size-texto);
+}
+
+.box-habil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.habil{
+    padding: 12px;
+    font-size: 0.8rem;
+    border-radius: 18px;
+    border: 2.9px solid black;
+    background-color: #d7d7d7;
+    color: black;
+    cursor: default;
+    box-shadow: 1px 1px 4px black;
+}
+
+.habil:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.projects{
+    text-align: center;
+    padding: 3rem 0rem;
+    background-color: var(--cor-bg-projeto);
+    color: var(--cor-texto-projetos);
+}
+
+.title-portifolio{
+    margin: 0px;
+    font-family: var(--font-titulo-principal);
+    font-size: var(--font-size-title);
+}
+
+.text-projects{
+    font-family: var(--font-texto);
+    font-size: var(--font-size-texto);
+}
+
+.img-card{
+    width: 100%;
+    max-width: 310px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-projects{
+    background-color: var(--cor-bg-cards);
+    border-radius: 8px;
+    color: black;
+    font-family: var(--font-texto-card);
+    transition: .4s;
+}
+
+.card-projects:hover{
+    transform: scale(1.02);
+}
+
+.align-text{
+    padding: 0px 8px;
+}
+
+.img-github{
+    width: 16px;
+}
+
+.link-box-projects{
+    padding: 12px 8px;
+    margin: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--font-btn-projetos);
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: black;
+    box-shadow: 1px 1px 4px black;
+    background-color: #fac800;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.link-box-projects:hover{
+    background-color: #fa9200;
+    transition: 0.4s;
+}
+
+.contact{
+    padding-top: 0rem 3rem;
+    background-color: var(--cor-bg-contact);
+    color: var(--cor-box-contact);
+    font-family: var(--font-text-contact);
+}
+
+.align-contact{
+    text-align: center;
+}
+
+.title-contact{
+    margin: 0px;
+    margin-bottom: 0.8rem;
+    font-family: var(--font-titulo-principal);
+    font-size: var(--font-size-title);
+}
+
+.form-data{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-text-contact);
+}
+
+.info-contact{
+    padding-right: 18px;
+}
+
+.ul-contact{
+    padding-left: 0px;
+}
+
+.list-ct{
+    margin-bottom: 12px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.icon-ct{
+    width: 45px;
+    margin-right: 12px;
+    transition: .4s;
+}
+
+.icon-ct:hover{
+    transform: scale(1.1);
+}
+
+.link-wpp{
+    text-decoration: none;
+    color: var(--cor-link-contato);
+    display: flex;
+    flex-direction: column;
+}
+
+.link-wpp:hover{
+    background-color: #25b43c;
+    border-radius: 6px;
+    padding: 6px;
+    color: white;
+    transition: .4s;
+}
+
+.info-wpp{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.camp-form{
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    font-family: var(--font-form-contact);
+    font-size: 0.9rem;
+    transition: .4s;
+    box-shadow: 1px 1px 4px black;
+}
+
+.camp-form-msg{
+    height: 90px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    font-family: var(--font-form-contact);
+    font-size: 0.9rem;
+    transition: .4s;
+    box-shadow: 1px 1px 4px black;
+}
+
+.camp-form-msg:hover, .camp-form:hover{
+    border: 1.6px solid;
+    transform: scale(1.04);
+}
+
+.btn-enviar{
+    width: 110px;
+    height: 35px;
+    background-color: var(--cor-bg-btn-enviar);
+    color: var(--cor-texto-btn-enviar);
+    border-radius: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 4px black;
+    transition: .4s;
+}
+
+.btn-enviar:hover{
+    background-color: var(--cor-bg-btn-enviar-hover);
+}
+
+.map-contact{
+    display: flex;
+    background-color: white;
+}
+
+/* Footer */
+#end-page{
+    background-color: var(--cor-bg-footer);
+    color: var(--cor-texto-footer);
+    text-align: center;
+}
+
+.rs-link{
+    text-decoration: none;
+    transition: .5s;
+}
+
+.rs-link:hover{
+    transform: scale(1.2)
+}
+
+
+.title-rs{
+    font-family: var(--font-titulo-principal);
+    font-size: var(--font-size-title);
+}
+
+/* .rs-icon{
+    border-bottom: 1px solid white;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .info-copy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-family: var(--font-copy);
+    font-size: 0.7rem;
+} */
+
+.logotipo-copy{
+    width: 60px;
+    height: 60px;
+    transition: .4s;
+}
+
+.erroEmail {
+    width: 158px;
+    background-color: #f40000;
+    color: white;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    display: none;
+}

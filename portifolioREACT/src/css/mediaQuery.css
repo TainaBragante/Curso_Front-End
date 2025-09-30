@@ -1,0 +1,753 @@
+/* ----------- Mobile First (até 767px) ----------- */
+
+.btn-nav-topo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.btn-nav-topo:hover{
+    transform: scale(1.2);
+    opacity: 100%;
+    transition: 0.4s;
+}
+
+.topo nav ul .nav-item a{
+    text-decoration: none;
+    color: var(--cor-font-menu);
+    text-transform: uppercase;
+    font-family: var(--font-header);
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
+
+
+.img-logotipo {
+    width: 90px;
+    margin-top: 5px;
+}
+
+
+.nome {
+    font-size: 3rem;
+    margin: 0px;
+}
+
+.nome:hover {
+    color: #ff3700;
+    cursor: default;
+    transition: 0.25s;
+}
+
+.funcao {
+    font-size: 1.4rem;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.funcao:hover {
+    color: #ff3700;
+    cursor: default;
+}
+
+.descricao {
+    font-size: 1rem;
+    font-family: var(--font-text-banner);
+    margin: 0px;
+}
+
+.descricao:hover {
+    color: #ff3700;
+    cursor: default;
+    transition: 0.25s;
+}
+
+.title-banner {
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.btn-portifolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.github {
+    width: 70px;
+    margin-right: 2px;
+}
+
+.linkedin {
+    width: 70px;
+    margin-right: 2px;
+}
+
+.link-github {
+    width: 70%;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 1.2rem;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.link-linkedin {
+    width: 70%;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 1.2rem;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.link-github:hover,
+.link-linkedin:hover {
+    transition: .25s;
+    transform: scale(1.02);
+}
+
+.img-banner {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.img-banner:hover {
+    transition: .25s;
+    transform: scale(1.03);
+}
+
+.box-img-banner {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotipo-copy {
+    width: 80px;
+}
+
+
+.about{
+    padding: 1.2rem 1rem;
+    background-color: #ff3700;
+    color: white;
+    text-align: center;
+}
+
+.box-habil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.habil{
+    padding: 8px;
+    font-size: 0.8rem;
+    border: 2.3px solid #000000;
+    background-color: white;
+    border-radius: 16px;
+    color: black;
+    cursor: default;
+}
+
+.habil:hover{
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+    transition: 1s;
+    border: none;
+}
+
+/* Cards dos Projetos */
+.title-projects{
+    margin: 0px;
+}
+
+.title-card{
+    margin: 0px;
+    font-weight: bold;
+}
+
+
+.projects{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 1.2rem;
+}
+
+.card-projects{
+    background-color: white;
+    color: black;
+    width: 310px;
+    padding-bottom: 3px;
+    border-radius: 8px;
+}
+.card-projects:hover{
+    transform: scale(1.02);
+    transition: .3s;
+}
+
+.img-card{
+    width: 100%;
+    /* max-width: 310px; */
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.grid-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.img-github{
+    border-radius: 100px;
+    width: 50px;
+    background-color: white;
+}
+
+.rep-github{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0.6rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ff3700;
+    border-radius: 10px;
+    padding: 5px 0.5px 5px 0.5px;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.rep-github:hover{
+    transform: scale(1.01);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+/* Section Contato */
+
+.contact{
+    padding-top: 1.2rem;
+    background-color: #ff3700;
+    color: black;
+    text-align: center;
+}
+
+.box-info-contact{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.icon-ct{
+    background-color: #ffffff;
+    border-radius: 30%;
+    width: 35px;
+    padding: 0.6rem;
+}
+
+.itens-contact{
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.item-contact{
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.link-wht-contato{
+    text-decoration: none;
+    color: #000000;
+    transition: .5s;
+}
+
+.link-wht-contato:hover{
+    padding: 0.2rem;
+    border-radius: 6px;
+    background-color: #005100;
+    color: white;
+    transform: scale(1.05);
+}
+
+.box-item-contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-endereco{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+/* Form */
+
+.msg-warning{
+    background-color: yellow;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-contact{
+    font-weight: bold;
+}
+
+.form-contact, .info-contact{
+    padding: 1.2rem;
+}
+
+.camp-form{
+    width: 100%;
+    height: 38px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-form-contact);
+    font-size: 1rem;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.camp-form-msg{
+    width: 100%;
+    height: 90px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-form-contact);
+    font-size: 1rem;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.align-btn{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-enviar{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px #000000;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 0.6rem 1rem; 
+    cursor: pointer;
+}
+
+.btn-enviar:hover{
+    background-color: rgb(19, 160, 26);
+    transition: .3s;
+}
+
+.btn-resetar{
+    background-color: rgb(252, 0, 0);
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px #000000;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 0.6rem 1rem; 
+    cursor: pointer;
+}
+
+.btn-resetar:hover{
+    background-color: rgb(247, 47, 47);
+    transition: .3s;
+}
+
+/* Removendo o fundo laranja da section do contact no maps*/
+.maps{
+    background-color: transparent;
+}
+
+.maps iframe {
+    display: block;
+    border: none;
+}
+
+/* footer */
+.end-page{
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.ul-icones{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0px;
+}
+
+.icon-img{
+    height: 35px;
+    width: 35px;
+}
+
+.info-copy{
+    border-top: solid 1px #ffffff;
+    padding-top: 10px;
+}
+
+
+
+/* Media querie para botão hamburguer */
+@media screen and (max-width: 769px){
+/* Botão hamburguer linhas */
+.one, .two, .three {
+    width: 100%;
+    height: 6px;
+    background-color: #ff3700;
+    margin: 6px auto;
+    transition: .3s;
+}
+
+.menu-toggle{
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/* Esconde o menu por padrão */
+.menu-section nav {
+    display: none;
+}
+
+/* Quando abrir o menu */
+.menu-section.on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 170px;
+    background-color: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-section.on nav {
+    display: block;
+}
+
+.menu-section.on .menu-toggle {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+/* Animação para virar "X" */
+.menu-section.on .menu-toggle .one {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.menu-section.on .menu-toggle .two {
+    opacity: 0;
+}
+
+.menu-section.on .menu-toggle .three {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+/* Links do menu */
+.menu-section.on nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-section.on nav ul li {
+    margin: 0.1rem 0;
+}
+
+.menu-section.on nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+}
+
+/* ----------- Tablet (768px até 1023px) ----------- */
+@media screen and (min-width: 768px) {
+    .btn-nav-topo{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .img-logotipo {
+        width: 110px;
+    }
+
+    .topo nav ul {
+        display: flex;
+    }
+
+    .title-banner {
+        padding: 1.2rem;
+        text-align: center;
+    }
+
+    .img-banner {
+        width: 100%;
+        max-width: 380px;
+        border-radius: 50%;
+    }
+
+    .img-banner:hover {
+        transition: .25s;
+        transform: scale(1.03);
+    }
+
+    .box-img-banner {
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-portifolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .link-github,
+    .link-linkedin {
+        width: 45%;
+    }
+
+
+    .link-github {
+        width: 80%;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 2rem;
+        padding: 1.2rem;
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    .link-linkedin {
+        width: 80%;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 2rem;
+        padding: 1.2rem;
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    .link-github:hover,
+    .link-linkedin:hover {
+        transition: .25s;
+        transform: scale(1.04);
+    }
+
+    /* Cards dos Projetos */
+    .grid-projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+        justify-items: center;
+    }
+
+    .rep-github{
+        margin: 0.7rem;
+    }
+
+    /* Footer */
+    
+    .ul-icones{
+        gap: 3rem;
+    }
+    .icon-img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .info-copy{
+        padding: 15px;
+    }
+
+}
+
+/* ----------- Desktop (1024px+) ----------- */
+@media screen and (min-width: 1024px) {
+
+    .btn-nav-topo{
+        width: 75px;
+        height: 75px;
+    }
+
+    .topo nav ul {
+        display: flex;
+    }
+
+    .topo nav ul .nav-item a:hover{
+        color: var(--cor-font-menu-hover);
+        transition: 0.4s;
+    }
+
+    .wrap {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+    }
+
+    .column-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .img-banner {
+        width: 100%;
+        max-width: 380px;
+        border-radius: 50%;
+    }
+
+    .btn-portifolio {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .link-github {
+        width: 80%;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 1.4rem;
+        padding: 1.2rem;
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    .link-linkedin {
+        width: 80%;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 1.4rem;
+        padding: 1.2rem;
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    .link-github:hover,
+    .link-linkedin:hover {
+        transition: .25s;
+        transform: scale(1.04);
+    }
+
+    .box-img-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Cards dos Projetos */
+    .grid-projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.8rem;
+    }
+
+    /* Section Contato */
+    .box-contact{
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    /* Footer */
+    
+    .ul-icones{
+        gap: 4rem;
+    }
+    .icon-img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .info-copy{
+        border-top: solid 1px #ffffff;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    
+}
+
+/* Cards em tela de monitor grande */
+@media screen and (min-width: 1400px){
+    .grid-projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+
+    

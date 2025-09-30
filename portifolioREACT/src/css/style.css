@@ -1,0 +1,72 @@
+@import url(./fonts.css);
+@import url(./variables.css);
+@import url(./mediaQuery.css);
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: var(--font-texto)
+}
+
+li{
+    list-style: none;
+}
+
+h3{
+    padding: 0.6rem 0rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    background-color: var(--cor-bg-header);
+}
+
+
+.topo{
+    width: 100%;
+    background-color: var(--cor-bg-header);
+}
+
+.topo nav ul .nav-item{
+    list-style: none;
+}
+
+
+.btn-nav{
+    margin: 0rem 0.6rem 0rem;
+    position: fixed;
+    bottom: 7px;
+    right: 7px;
+}
+
+.container {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-page{
+    padding: 2rem 1.4rem 2rem 1.4rem;
+    background-color: #000000;
+    color: white;
+}
+
+
+
+
+
+

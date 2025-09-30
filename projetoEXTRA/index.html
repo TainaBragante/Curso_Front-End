@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icones! -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Login & Cadastro</title>
+</head>
+
+<body>
+    <main class="container">
+        <!-- Cadastro de Conta. -->
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Seja bem vindo(a)!</h2>
+                <p class="description description-primary">Para se manter conectado na Aplicação</p>
+                <p class="description description-primary">por favor faça seu Login com suas informações.</p>
+                <button id="signin" class="btn btn-primary">Realizar Login</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Criar uma Conta!</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <p class="description description-second">Preencha todos os Dados solicitados:</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Seu Nome aqui...">
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Seu E-mail aqui...">
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Sua Senha aqui...">
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Repita sua Senha aqui...">
+                    </label>
+
+                    <button class="btn btn-second">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Login de Acesso. -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Olá meu amigo(a)!</h2>
+                <p class="description description-primary">Caso não tenha uma Conta, basta se cadastrar.</p>
+                <p class="description description-primary">Leia com atenção todas as informações</p>
+                <p class="description description-primary">e preencha tudo conforme for solicitado.</p>
+                <button id="signup" class="btn btn-primary">Realizar Cadastro</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Faça seu Login de Acesso aqui!</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <p class="description description-second">Preencha com seus Dados de acesso:</p>
+                <form class="form">
+
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Seu E-mail aqui...">
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Sua Senha aqui...">
+                    </label>
+
+                    <a class="password" href="#">Esqueceu sua Senha?</a>
+                    <button class="btn btn-second">Acessar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
